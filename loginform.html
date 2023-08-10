@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="loginform.css">
+
+    </head>
+    <body>
+
+    
+    <div class="container">
+        <div class="box">
+            <header class="signup-header">
+                <h1>signup</h1>
+            </header>
+            <main class="signup-body">
+                <form action="#">
+                    <p>
+                    <label for="name">full name</label>
+                    <input type="text" placeholder="type name here" id="name" required pattern="/^[A-Za-z]*\s{1}[A-Za-z]*$/"/>
+                    <span id="nameerror"></span>
+                    </p>
+                    <p>
+                        <label for="email">E mail</label>
+                        <input type="email" placeholder="xyz@gmail.com" id="email" required/>
+                        </p>
+                        <p>
+                            <label for="password">password</label>
+                            <input type="password" placeholder="at least 8 characters" id="password" required min="8" max="30"/>
+                            </p>
+                            <p>
+                                <input type="submit" value="Create Account" id="submitBtn">
+                                
+                            </p>
+                </form>
+            </main>
+            <footer class="signup-footer">
+                <p>Already have an account?<a href="">Login</a></p>
+            </footer>
+        </div>
+    </div>
+    </body>
+    <script src="loginform.js"></script>
+</html>
